@@ -4,9 +4,8 @@ import styles from '../styles/Team.module.css'
 const Kingsley = () => {
     return (
         <div className={styles.card}>
-            <Image className={styles.profile} src={'/images/avatar.png'} alt="Avatar" width={100} height={100} />
-            <h2>Kingsley</h2> 
-            <p>A developer who works for Grandida</p>
+            <a href="https://github.com/KingsleyOnoh38"><Image className={styles.profile} src={'/images/meebits.png'} alt="Avatar" width={100} height={100} /></a>
+            <p className={styles.code}>Kingsley, a developer who works for Grandida</p>
         </div>
     )
 }

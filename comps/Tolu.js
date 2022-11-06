@@ -4,9 +4,8 @@ import styles from '../styles/Team.module.css'
 const Tolu = () => {
     return (
         <div className={styles.card}>
-            <Image className={styles.profile} src={'/images/avatar.png'} alt="Avatar" width={100} height={100} />
-            <h2>Tolu</h2> 
-            <p>A developer who works for Grandida</p>
+            <a href="https://github.com/Tolu1"><Image className={styles.profile} src={'/images/david.jfif'} alt="Avatar" width={100} height={100} /></a>
+            <p className={styles.code}>Tolu, a developer who works for Grandida</p>
         </div>
     )
 }

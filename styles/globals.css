@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: #141414;
+  border: 1.5px solid rgba(0,128,128,.6);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -9,18 +11,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: url('/images/cursor-small.png'), auto;
 }
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

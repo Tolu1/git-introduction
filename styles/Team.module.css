@@ -19,6 +19,7 @@
     border-top: 1px solid #eaeaea;
     justify-content: center;
     align-items: center;
+    border-color: #222;
   }
   
   .footer a {
@@ -36,11 +37,12 @@
   .title a:hover,
   .title a:focus,
   .title a:active {
-    text-decoration: underline;
+    filter: invert(1);
   }
   
   .title {
     margin: 0;
+    margin-bottom: 50px;
     line-height: 1.15;
     font-size: 4rem;
   }
@@ -57,11 +59,16 @@
   }
   
   .code {
-    background: #fafafa;
+    background: #171717;
+    color:rgba(0,112,243,.5);
     border-radius: 5px;
+    border: 1px solid rgba(0,128,128,.6);
     padding: 0.75rem;
-    font-size: 1.1rem;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    font-size: 2.5rem;
+    font-family: monospace, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
       Bitstream Vera Sans Mono, Courier New, monospace;
   }
   
@@ -70,26 +77,43 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 1000px;
+    border: 1px solid rgba(0,128,128,.6);
+    background-color:#141414;
   }
   
   .card {
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
-    color: inherit;
+    color: #444444;
+    background-color:#141414;
     text-decoration: none;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
+    border-radius: 5px;
+    border-color: #222;
+    border: 1px solid rgba(0,128,128,.6);
+    box-shadow: 0.5px -0.5px 0.5px 0.5px #292929;
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 300px;
+    position: relative;
   }
   
   .card:hover,
   .card:focus,
   .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: #525252;
+    border-color: #BCEAD5;
+  }
+  /* at __webpack_require__.hmrM (http://localhost:3000/_next/static/chunks/webpack.js?ts=1667748933775:1186:20) */
+
+  .card:hover .code {
+    border-color: #BCEAD5;
+  }
+
+  .card:hover .profile {
+    transform: scale(1.1);
+    transition: color 0.15s ease, border-color 0.15s ease;
+    border-color: #BCEAD5;
   }
   
   .card h2 {
@@ -110,26 +134,47 @@
   
   .profile {
     margin: auto;
-    border: 1px solid #eaeaea;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    display: block;
+    width: 70%; 
+    height: 70%; 
+    float: center;
+    cursor: url('/images/press-button-small.png'), auto;
   }
-  
+
+.monitor {
+    display: grid;
+    grid-gap: 6px;
+    min-height: 337.50px;
+    min-width: 600px;
+    max-width: 1000px;
+    border: 0px solid rgba(0,128,128,.6);
+    background-color:#0070f3;
+  }
+
+.monitorframe {
+    border: 1px solid rgba(0,128,128,.6);
+    padding: 20px;
+    cursor: url('/images/cursor-small.png'), auto;
+}
+
+.neck {
+    border-left: 1px solid rgba(0,128,128,.6);
+    border-right: 1px solid rgba(0,128,128,.6);
+	height: 100px;
+	width: 70px;
+}
+
+.tail {
+    border: 1px solid rgba(0,128,128,.6);
+	height: 5px;
+	width: 225px;
+}
+
   @media (max-width: 600px) {
     .grid {
       width: 100%;
       flex-direction: column;
     }
   }
-  
-  @media (prefers-color-scheme: dark) {
-    .card,
-    .footer {
-      border-color: #222;
-    }
-    .code {
-      background: #111;
-    }
-    .logo img {
-      filter: invert(1);
-    }
-  }
-  

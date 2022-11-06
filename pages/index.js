@@ -18,19 +18,23 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://github.com/The-FutureX">FutureX Team</a>
+          <a href="https://github.com/The-FutureX" className={styles.code}>FutureX Team✔️</a>
         </h1>
 
-        <p className={styles.description}>
-          Git and collaboration tutorial!
-        </p>
-
-        <div className={styles.grid}>
-          <Tolu />
-          <Chris />
-          <Kingsley />
-          <Ruth />
-          <Timmy />
+        <div className={styles.monitorframe}>
+          <div className={styles.monitor}> 
+            <div className={styles.grid}>
+              <Tolu />
+              <Chris />
+              <Kingsley />
+              <Ruth />
+              <Timmy />
+            </div>
+          </div>
+        </div>
+        <div className={styles.neck}>
+        </div>
+        <div className={styles.tail}>
         </div>
       </main>
 
