@@ -18,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://github.com/The-FutureX" className={styles.code}>FutureX Team✔️</a>
+          <a href="https://github.com/The-FutureX" className={styles.code}>FutureX, The Team✔️</a>
         </h1>
 
         <div className={styles.monitorframe}>
